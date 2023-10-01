@@ -10,6 +10,8 @@ html{
 body{
     height: auto;
     width: 100vw;
+    font-size: 20px;
+    color: rgb(62, 61, 61);
 }
 header{
     height: 100vh;
@@ -39,6 +41,20 @@ object-fit: cover;
   
     
 }
+.headerLogo{
+    background-color: rgba(82, 75, 75, 0.566);
+    position: absolute;
+    top:0.8%;
+    left: 45%;
+    width: 150px;
+    z-index: 4;
+}
+.headerLogo>img{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
 nav{
     background-color: rgba(0, 0, 0, 0.252);
     width: 100%;
@@ -60,7 +76,8 @@ a{
     color: black;
 }
 main{
-    background-color: gray;
+    margin-top: 50px;
+    margin-bottom: 50px;
     height: auto;
     width: 100%;
     display: flex;
@@ -69,7 +86,7 @@ main{
     align-items: center;
 }
 footer{
-    background-color: rgb(223, 221, 218);
+    background-color: rgba(27, 27, 27, 0.482);
     height: 250px;
     width: 100%;
     display: flex;
@@ -86,6 +103,7 @@ footer{
     justify-content: space-between;
     align-items:center;
 }
+
 .footerSec{
     width: calc(90%/3);
     height: 98%;
@@ -98,6 +116,7 @@ footer{
     padding-top: 2%;
     text-align: center;
     row-gap: 5px;
+   
 }
 
 .footerLogo{
@@ -113,6 +132,7 @@ footer{
     height: 48%;
     width: 100%;
     padding-top: 5%;
+  
 }
 .redes{
     display: flex;
@@ -121,6 +141,7 @@ footer{
     align-items: center;
     font-size: 25px;
     column-gap: 5%;
+   
 }
 .copy{
     background-color: rgba(195, 195, 193, 0.953);
@@ -132,4 +153,11 @@ footer{
     align-items: center;
     text-align: center;
     font-size: 16px;
+    
+}
+.zoom{
+    transition: transform .1s; 
+}
+.zoom:hover {
+    transform: scale(1.05); 
 }
