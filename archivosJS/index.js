@@ -34,4 +34,4 @@ function toHome() {
   // console.log("llame a toHome")
   document.getElementById("home").setAttribute("href", "./index.html")
 }
-var prueba=""
+var prueba="a"
