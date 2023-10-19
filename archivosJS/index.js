@@ -12,8 +12,8 @@ for (var i = 0; i < botonNav.length; i++) {
 function navegacion(id) {
   switch (id) {
 
-    case "habitaciones":
-      document.getElementById("habitaciones").setAttribute("href", "./habitaciones.html")
+    case "suites":
+      document.getElementById("suites").setAttribute("href", "./suites.html")
       break;
     case "restaurante":
       document.getElementById("restaurante").setAttribute("href", "./restaurante.html")
@@ -34,4 +34,3 @@ function toHome() {
   // console.log("llame a toHome")
   document.getElementById("home").setAttribute("href", "./index.html")
 }
-var prueba="a"
