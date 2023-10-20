@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 40px;
+    line-height: 35px;
     
 }
 .productosSpa{
@@ -100,7 +100,7 @@
     bottom: 12%;
 } */
 .fa-solid, h2,h3, h4{
-    color: chocolate;
+    color: rgb(230, 180, 105);
 }
 .enlacesServicios{
     width: 100%;
@@ -112,8 +112,8 @@
   column-gap: 20px;
 }
 .miBoton {
-    padding: 10px 20px;
-    background-color: #af934c;
+    padding: 15px 30px;
+    background-color: rgb(230, 180, 105);
     /* color: white; */
     border: none;
     border-radius: 5px;
@@ -126,4 +126,7 @@
   
   .miBoton:active {
     background-color: #3bc36f;
+  }
+  .contenedorAlert{
+    min-width: 70vw;
   }
