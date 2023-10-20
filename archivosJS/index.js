@@ -20,7 +20,8 @@ function navegacion(id) {
       break;
     case "spa":
       document.getElementById("spa").setAttribute("href", "./spa.html")
-      construirServicios(dataSpa)
+      getData()
+      // construirServicios(dataSpa)
       break;
     case "nosotros":
       document.getElementById("nosotros").setAttribute("href", "./nosotros.html")
