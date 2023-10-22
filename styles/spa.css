@@ -231,30 +231,3 @@ label{
 #resetBtn:hover{
     background: #dc3545;
 }
-.alert{
-    margin: 1rem 2rem;
-}
-
-/* Estilos de alert */
-
-.custom-button {
-    background-color: rgb(255, 255, 255) !important;
-    border-radius: 10px !important;
-    height: 10% !important;
-    width: 30% !important;
-    font-size: 1.5rem !important;
-    color: #7e7c7d !important;
-  }
-
-.custom-container {
-    font-family: "Questrial", sans-serif !important;
-    color: white !important;
-  }
-
-.btnColor {
-    color: rgb(28, 27, 27) !important;
-  }
-.tituloAlert {  
-    color: floralwhite !important;
-  }
-
