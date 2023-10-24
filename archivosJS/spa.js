@@ -157,7 +157,7 @@ function formularioSpa(servicioSeleccionado) {
 // CONSTRUYE EL HTML DEL FORMULARIO DE RESERVA
 function pintarFormulario(){
   var formulario = `
-  <form action="" id="formularioSpa">
+  <form action="" id="formularioSpa" onsubmit="validarFormSpa(event)">
                     <div class="entrada">
                         <label for="nombre"><i class="fa-solid fa-user"></i></label>
                         <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre y Apellido">
@@ -225,6 +225,11 @@ function pintarFormulario(){
       container: 'contenedorAlert' // Clase CSS personalizada para el contenedor
     }
   })
+
+  // let formSpa = document.querySelector("#formularioSpa")
+  // formSpa.addEventListener("submit", function (evento) { 
+    
+  //   validacionFormSpa(evento) })
 }
 // PARA OCULTAR EL BOTON OK PREDETERMINADO DE SWEETALERT
 function ocultarBoton(){
