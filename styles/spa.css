@@ -231,3 +231,8 @@ label{
 #resetBtn:hover{
     background: #dc3545;
 }
+
+@media screen and (max-width:479px) {}
+  
+@media screen and (min-width:480px) and (max-width:767px) {}
+@media screen and (min-width:768px) and (max-width:1023px) {}
