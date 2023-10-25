@@ -232,7 +232,70 @@ label{
     background: #dc3545;
 }
 
-@media screen and (max-width:479px) {}
+@media screen and (max-width:479px) {
+    .introSpa{
+        flex-direction: column;
+    }
+   .introSpaPic{
+ display: none;
+   }
+   .introSpaInfo{
+    width: 100%;
+    height: auto;
+}
+.productosSpa h2{
+    text-align: center;
+}
+.productosItem{
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.productosPortada{
+    width: 100%;
+    height: 200px;
+}
+.productoInfo{
+    width: 100%;
+    height: auto;
+    row-gap: 15px;
+    margin-top: 25px;
+}
+.detalle{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detalleDerecha{
+    width: 100%;
+    justify-content: center;
+    
+}
+.productosPortada>img{
+    margin-top: 20px;
+}
+}
   
-@media screen and (min-width:480px) and (max-width:767px) {}
+@media screen and (min-width:480px) and (max-width:767px) {
+    .introSpa{
+        flex-direction: column;
+    }
+   .introSpaPic{
+ display: none;
+   }
+   .introSpaInfo{
+    width: 100%;
+    height: auto;
+}
+.detalle{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detalleDerecha{
+    width: 100%;
+    justify-content: center;
+    
+}
+}
 @media screen and (min-width:768px) and (max-width:1023px) {}
