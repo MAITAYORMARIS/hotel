@@ -1,6 +1,6 @@
 .introSpa{
     width: 90%;
-    height: 60vh;
+    height: auto;
     text-align: justify;
     line-height: 30px;
     display: flex;
@@ -138,7 +138,7 @@ i{
   column-gap: 20px;
 }
 .miBoton {
-    padding: 15px 40px;
+    padding: 12px 45px;
     background-color: rgb(230, 180, 105);
     color: white;
     border: none;

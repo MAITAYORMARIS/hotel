@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Playpen+Sans:wght@500&family=Rubik&display=swap" rel="stylesheet">
     <title>Hotel</title>
 </head>
 
@@ -26,8 +29,14 @@
             <li> <a class="link" href="#" id="spa">Spa</a></li>
             <li><a class="link" href="#" id="nosotros">Nosotros</a></li>
         </nav>
+        <section class="call">
+            <p>Descubre el lujo y la comodidad de nuestras suites </p>
+            <span class="callInfo">Vive una experiencia inolvidable en nuestro hotel de lujo!</span>
+            <button type="button" class="callToAction" onclick=reservar()>Quiero Reservar</button>
+        </section>
     </header>
     <main>
+
         <section class="presentacion">
             <h2>¡Bienvenidos a Luxury Suites & Spa!</h2>
             <p>En Luxury Suites & Spa, estamos comprometidos a proporcionar una experiencia única y excepcional en cada
@@ -36,42 +45,56 @@
         </section>
         <section class="introAmenities">
             <div class="amenitiesPortada zoom izq">
-                <img src="https://firebasestorage.googleapis.com/v0/b/mi-proyecto-de-recetas.appspot.com/o/FOTOS%20PROYECTO%20HOTEL%2Fpexels-max-rahubovskiy-6782574.jpg?alt=media&token=0d1ae944-ced6-42ea-8776-085831b709f7&_gl=1*13ejo7l*_ga*MTcyMTIyNTczNy4xNjk2MTk1ODIy*_ga_CW55HF8NVT*MTY5NjE5NTgyNC4xLjEuMTY5NjE5NjI4MC4zMS4wLjA." alt="suites">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-proyecto-de-recetas.appspot.com/o/FOTOS%20PROYECTO%20HOTEL%2Fpexels-max-rahubovskiy-6782574.jpg?alt=media&token=0d1ae944-ced6-42ea-8776-085831b709f7&_gl=1*13ejo7l*_ga*MTcyMTIyNTczNy4xNjk2MTk1ODIy*_ga_CW55HF8NVT*MTY5NjE5NTgyNC4xLjEuMTY5NjE5NjI4MC4zMS4wLjA."
+                    alt="suites">
             </div>
             <div class="amenitiesInfo">
                 <p>Nuestras suites, cuidadosamente diseñadas y exquisitamente decoradas, te ofrecen el máximo confort y
                     elegancia. Cada habitación es un santuario de lujo, donde podrás relajarte y disfrutar de vistas
                     impresionantes. La serenidad y el encanto de nuestras suites son inigualables.</p>
-                <button type="button" class="botonHome" id="irsuites" data-destino="suites">Ir a Suites<i class="fa-solid fa-chevron-right"></i></button>
+                <button type="button" class="botonHome" id="irsuites" data-destino="suites">Ir a Suites<i
+                        class="fa-solid fa-chevron-right"></i></button>
             </div>
         </section>
         <section class="introAmenities fondo">
             <div class="amenitiesInfo ">
-                <p>Nuestro restaurante gourmet es un destino culinario en sí mismo. Nuestro chef ejecutivo crea platos que deleitarán tus sentidos, utilizando ingredientes frescos y locales. Cada comida es una experiencia gastronómica que no querrás perderte.</p>
-                <button type="button" class="botonHome der" id="irrestaurante" data-destino="restaurante">Ir a Restaurant<i class="fa-solid fa-chevron-right"></i></button>
+                <p>Nuestro restaurante gourmet es un destino culinario en sí mismo. Nuestro chef ejecutivo crea platos
+                    que deleitarán tus sentidos, utilizando ingredientes frescos y locales. Cada comida es una
+                    experiencia gastronómica que no querrás perderte.</p>
+                <button type="button" class="botonHome der" id="irrestaurante" data-destino="restaurante">Ir a
+                    Restaurant<i class="fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="amenitiesPortada zoom der">
-                <img src="https://firebasestorage.googleapis.com/v0/b/mi-proyecto-de-recetas.appspot.com/o/FOTOS%20PROYECTO%20HOTEL%2Fpexels-engin-akyurt-2771927.jpg?alt=media&token=ebeb5f6e-2525-4c6c-8d3f-9b8bef7e4fae&_gl=1*1is0ott*_ga*MTcyMTIyNTczNy4xNjk2MTk1ODIy*_ga_CW55HF8NVT*MTY5NjE5NTgyNC4xLjEuMTY5NjE5NjMwOC4zLjAuMA.." alt="Foto de Engin Akyurt">
+                <img src="https://firebasestorage.googleapis.com/v0/b/mi-proyecto-de-recetas.appspot.com/o/FOTOS%20PROYECTO%20HOTEL%2Fpexels-engin-akyurt-2771927.jpg?alt=media&token=ebeb5f6e-2525-4c6c-8d3f-9b8bef7e4fae&_gl=1*1is0ott*_ga*MTcyMTIyNTczNy4xNjk2MTk1ODIy*_ga_CW55HF8NVT*MTY5NjE5NTgyNC4xLjEuMTY5NjE5NjMwOC4zLjAuMA.."
+                    alt="Foto de Engin Akyurt">
             </div>
 
         </section>
         <section class="introAmenities">
             <div class="amenitiesPortada zoom izq">
                 <img src="https://firebasestorage.googleapis.com/v0/b/mi-proyecto-de-recetas.appspot.com/o/FOTOS%20PROYECTO%20HOTEL%2Fpexels-max-rahubovskiy-6957079.jpg?alt=media&token=0236e294-05b8-4f3e-930e-12f75d0e49f2&_gl=1*1jsscjr*_ga*MTcyMTIyNTczNy4xNjk2MTk1ODIy*_ga_CW55HF8NVT*MTY5NjE5NTgyNC4xLjEuMTY5NjE5NjE1My42MC4wLjA."
-                alt="Foto de Max Rahubovskiy">
+                    alt="Foto de Max Rahubovskiy">
             </div>
             <div class="amenitiesInfo">
-                <p>En nuestro spa de clase mundial, experimentarás una renovación total de cuerpo y mente. Nuestros terapeutas altamente capacitados te brindarán tratamientos personalizados que te dejarán rejuvenecido y revitalizado. Sumérgete en un oasis de calma y bienestar.</p>
-                <button type="button" class="botonHome" id="irspa" data-destino="spa">Ir a Spa<i class="fa-solid fa-chevron-right"></i></button>
+                <p>En nuestro spa de clase mundial, experimentarás una renovación total de cuerpo y mente. Nuestros
+                    terapeutas altamente capacitados te brindarán tratamientos personalizados que te dejarán
+                    rejuvenecido y revitalizado. Sumérgete en un oasis de calma y bienestar.</p>
+                <button type="button" class="botonHome" id="irspa" data-destino="spa">Ir a Spa<i
+                        class="fa-solid fa-chevron-right"></i></button>
             </div>
         </section>
         <section class="introAmenities fondo">
             <div class="amenitiesInfo">
-                <p>Estamos ansiosos por darte la bienvenida y brindarte una estancia inolvidable en nuestro Hotel de Lujo. Tu experiencia de lujo comienza aquí, donde cada detalle se ha cuidado minuciosamente.</p>
-                <button type="button" class="botonHome der" id="irnosotros" data-destino="nosotros">Conocenos<i class="fa-solid fa-chevron-right"></i></button>
+                <p>Estamos ansiosos por darte la bienvenida y brindarte una estancia inolvidable en nuestro Hotel de
+                    Lujo. Tu experiencia de lujo comienza aquí, donde cada detalle se ha cuidado minuciosamente.</p>
+                <button type="button" class="botonHome der" id="irnosotros" data-destino="nosotros">Conocenos<i
+                        class="fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="amenitiesPortada zoom der">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.67441514543!2d-58.389545!3d-34.587251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa37be492d9%3A0xd5521685dfc2c0c5!2sAv.%20Alvear%201981%2C%20C1129AAB%20CABA!5e0!3m2!1ses-419!2sar!4v1697937033747!5m2!1ses-419!2sar" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.67441514543!2d-58.389545!3d-34.587251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa37be492d9%3A0xd5521685dfc2c0c5!2sAv.%20Alvear%201981%2C%20C1129AAB%20CABA!5e0!3m2!1ses-419!2sar!4v1697937033747!5m2!1ses-419!2sar"
+                    width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </section>
@@ -112,8 +135,8 @@
         </section>
 
         <section class=" copy">
-                    <p>Información exclusiva de XXXX. Desarrollada para uso academico. 2023</p>
-            </section>
+            <p>Información exclusiva de XXXX. Desarrollada para uso academico. 2023</p>
+        </section>
     </footer>
 
     <script src="./archivosJS/index.js"></script>

@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    /* font-family: 'Playpen Sans', cursive;
+    font-family: 'PT Sans Narrow', sans-serif; */
+    
 }
 
 html {
@@ -18,6 +20,7 @@ body {
     width: 100vw;
     font-size: 20px;
     color: rgb(62, 61, 61);
+    font-family: 'Rubik', sans-serif;
 }
 
 header {
@@ -86,6 +89,44 @@ a {
     text-decoration: none;
     color: #CBB288;
 }
+.call{
+    width: 40vw;
+    height: 70px;
+    background-color:  rgba(82, 75, 75, 0.566);
+    position: absolute;
+    bottom:20vh;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color:#CBB288;
+   font-family: 'Playpen Sans', cursive; 
+   font-size:15px;
+   font-weight: bold;
+}
+.callInfo{
+    font-family: 'PT Sans Narrow', sans-serif;  
+   font-size:15px;
+   /* font-weight:normal; */
+   color:rgb(197, 164, 131);;
+}
+.callToAction{
+    padding: 5px 15px;
+    background-color:#3bc36f ;
+    color: #2f2d2b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.callToAction:hover {
+    background-color: rgb(230, 180, 105);
+  }
+  
+  .callToAction:active {
+    background-color: rgb(230, 180, 105);
+  }
 main{
     margin-top: 50px;
     margin-bottom: 50px;

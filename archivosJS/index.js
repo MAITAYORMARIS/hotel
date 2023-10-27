@@ -54,3 +54,7 @@ function navegacionAlternativa(id){
   var paginaanavegar=id
   window.location.pathname = `/${paginaanavegar}.html`
 }
+
+function reservar() {
+  window.location.href = "suites.html";
+}
