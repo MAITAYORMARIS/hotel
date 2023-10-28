@@ -36,57 +36,85 @@ document.addEventListener("DOMContentLoaded", function () {
         form.classList.add("animation");
 
         alert("GRACIAS! Pronto nos comunicaremos con vos!");
-        window.location.href = "/";
+        window.location.href = "/index.html";
     });
 
-    // Mostrar fotos de habitaciones
 
-    const abrirCarruselBtn = document.getElementById("abrirCarrusel");
-    const cerrarCarruselBtn = document.getElementById("cerrarCarrusel");
-    
-    const carrusel = document.getElementById("carrusel");
-    const imagenes = carrusel.getElementsByTagName("img");
+    // Mostrar carruseles
 
-    const anteriorImagenBtn = document.getElementById("anteriorImagen");
-    const siguienteImagenBtn = document.getElementById("siguienteImagen");
-    let imagenActual = 0;
+    function inicializarCarrusel(abrirBtn, cerrarBtn, carrusel, imagenes, anteriorBtn, siguienteBtn) {
+        let imagenActual = 0;
 
-    abrirCarruselBtn.addEventListener("click", () => {
-        carrusel.style.display = "block";
-        mostrarImagen(imagenActual);
-    });
+        abrirBtn.addEventListener("click", () => {
+            carrusel.style.display = "block";
+            mostrarImagen(imagenActual);
+        });
 
-    cerrarCarruselBtn.addEventListener("click", () => {
-        carrusel.style.display = "none";
-    });
+        cerrarBtn.addEventListener("click", () => {
+            carrusel.style.display = "none";
+        });
 
-    anteriorImagenBtn.addEventListener("click", () => {
-        cambiarImagen(-1);
-    });
+        anteriorBtn.addEventListener("click", () => {
+            cambiarImagen(-1);
+        });
 
-    siguienteImagenBtn.addEventListener("click", () => {
-        cambiarImagen(1);
-    });
+        siguienteBtn.addEventListener("click", () => {
+            cambiarImagen(1);
+        });
 
-    function mostrarImagen(indice) {
-        for (let i = 0; i < imagenes.length; i++) {
-            imagenes[i].style.display = "none";
+        function mostrarImagen(indice) {
+            for (let i = 0; i < imagenes.length; i++) {
+                imagenes[i].style.display = "none";
+            }
+            imagenes[indice].style.display = "block";
         }
-        imagenes[indice].style.display = "block";
+
+        function cambiarImagen(i) {
+            imagenActual += i;
+
+            if (imagenActual < 0) {
+                imagenActual = imagenes.length - 1;
+            } else if (imagenActual >= imagenes.length) {
+                imagenActual = 0;
+            }
+            mostrarImagen(imagenActual);
+        }
     }
 
-    function cambiarImagen(delta) {
-        imagenActual += delta;
-
-        if (imagenActual < 0) {
-            imagenActual = imagenes.length - 1;
-        } else if (imagenActual >= imagenes.length) {
-            imagenActual = 0;
-        }
-        mostrarImagen(imagenActual);
-    }
-
+    inicializarCarrusel(
+        document.getElementById("abrirCarrusel1"),
+        document.getElementById("cerrarCarrusel1"),
+        document.getElementById("carrusel1"),
+        document.getElementById("carrusel1").getElementsByTagName("img"),
+        document.getElementById("anteriorImagen1"),
+        document.getElementById("siguienteImagen1")
+    );
+    inicializarCarrusel(
+        document.getElementById("abrirCarrusel2"),
+        document.getElementById("cerrarCarrusel2"),
+        document.getElementById("carrusel2"),
+        document.getElementById("carrusel2").getElementsByTagName("img"),
+        document.getElementById("anteriorImagen2"),
+        document.getElementById("siguienteImagen2")
+    );
+    inicializarCarrusel(
+        document.getElementById("abrirCarrusel3"),
+        document.getElementById("cerrarCarrusel3"),
+        document.getElementById("carrusel3"),
+        document.getElementById("carrusel3").getElementsByTagName("img"),
+        document.getElementById("anteriorImagen3"),
+        document.getElementById("siguienteImagen3")
+    );
+    inicializarCarrusel(
+        document.getElementById("abrirCarrusel4"),
+        document.getElementById("cerrarCarrusel4"),
+        document.getElementById("carrusel4"),
+        document.getElementById("carrusel4").getElementsByTagName("img"),
+        document.getElementById("anteriorImagen4"),
+        document.getElementById("siguienteImagen4")
+    );
 
 });
+
 
 
