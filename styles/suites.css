@@ -1,11 +1,11 @@
+/* seccion presentacionsuites */
 
 #general {
-    /* font-size: 18px; */
     text-align: center;
     padding: 100px;
 }
 
-#amenities {
+#titulo1 {
     font-size: 30px;
     color: rgb(230, 180, 105);
     text-align: center;
@@ -25,6 +25,12 @@
     text-align: center;
 }
 
+/* seccion habitaciones */
+
+#titulos{
+    font-size: 27px;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -36,6 +42,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-container {
@@ -48,7 +56,7 @@
     grid-row: 1;
     grid-column: 2;
     text-align: center;
-    font-size: larger;
+    font-size: 20px;
 }
 
 .imagen1 {
@@ -101,56 +109,59 @@
     grid-row: 2;
     grid-column: 1;
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: white;
     color: rgb(230, 180, 105);
-    border: rgb(230, 180, 105);;
+    border: 2px solid rgb(230, 180, 105); 
     padding: 15px 15px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .carrusel img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 60%;
+    max-height: 60%;
     margin: 10% auto;
 }
 
-#anteriorImagen{
-    display:grid;
-    margin-top: 10px;
+.anterior,
+.siguiente {
+    display: grid;
+    position: absolute;
+    top: 45%; 
+    transform: translateY(-50%);
+    cursor: pointer;
     background-color: rgb(230, 180, 105);
     color: white;
     border: none;
-    padding: 15px 15px;
     border-radius: 10px;
-    cursor: pointer;
-    font-size: 10px;
+    padding: 15px 15px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-#siguienteImagen {
-    display: block;
+.anterior {
+    left: 10px;
+    margin-top: 40px;
+}
+
+.siguiente {
+    right: 10px;
     margin-top: 10px;
-    background-color: rgb(230, 180, 105);
-    color: white;
-    border: none;
-    padding: 15px 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 10px;
 }
 
 .cerrar {
     position: absolute;
     top: 10px;
     right: 10px;
-    color: white;
+    color: rgb(230, 180, 105);
     font-size: 30px;
     cursor: pointer;
 }
 
-#reservar {
+#reservar1, #reservar2, #reservar3, #reservar4 {
     grid-row: 2;
     grid-column: 2;
     display: block;
@@ -162,47 +173,60 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 20px;
+    font-weight: bold;
 }
-
 
 
 .formulario {
     display: none;
     position: fixed;
-    width: 50%;
-    height: 50%;
     top: 50%;
     left: 50%;
-    font-size: 20px;
     transform: translate(-50%, -50%);
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    box-shadow: 0 50px 80px rgb(230, 180, 105);
-    z-index: 1;
+    border-radius: 2rem;
+    padding: 20px;
 }
 
-.cerrar {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-.cerrar:hover {
-    color: red;
+.formulario input[type="text"]:focus,
+.formulario input[type="date"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: rgb(230, 180, 105);
 }
 
 #enviar {
     display: block;
-    position: center;
-    margin-top: 10px;
+    margin: 10px auto;
     background-color: rgb(230, 180, 105);
     color: white;
     border: none;
-    width: 50%;
+    width: auto;
     height: 50%;
     padding: 15px 15px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 20px;
-
 }
+
+
+@media screen and (max-width:479px) {}
+@media screen and (min-width:480px) and (max-width:767px) {}
+@media screen and (min-width:768px) and (max-width:1023px) {}
