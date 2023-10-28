@@ -52,7 +52,7 @@ function toHome() {
 
 function navegacionAlternativa(id){
   var paginaanavegar=id
-  window.location.pathname = `/${paginaanavegar}.html`
+  window.location.pathname = `/hotel/${paginaanavegar}.html`
 }
 
 function reservar() {
