@@ -125,8 +125,11 @@ i{
     position: relative;
     bottom: 12%;
 } */
-.fa-solid, h2,h3, h4{
+.fa-solid{
     color: rgb(230, 180, 105);
+}
+footer{
+    color: rgb(230, 180, 105)
 }
 .enlacesServicios{
     width: 100%;
