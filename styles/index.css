@@ -14,7 +14,9 @@ html {
     color: #3D3935;
 
 }
-
+button a{
+    color:#3D3935;
+}
 body {
     height: auto;
     width: 100vw;
@@ -56,9 +58,11 @@ video {
   
     position: absolute;
     top:0.8%;
-    left: 45%;
+    display: flex;
     width: 100%;
+    height: auto;
     z-index: 4;
+    padding-left: 45%;
 }
 .headerLogo>img{
     background-color: rgba(82, 75, 75, 0.566);
@@ -66,6 +70,7 @@ video {
     min-height: 150px;
     max-width: 150px;
     max-height: 150px;
+   
     
 }
 nav{
@@ -221,6 +226,7 @@ footer{
     align-items: center;
     text-align: center;
     font-size: 16px;
+    color:#2f2d2b;
     
 }
 .zoom{
@@ -317,7 +323,7 @@ iframe{
 
   @media screen and (max-width:479px) {
      .headerLogo{
-        left: 30%;
+        padding-left: 30%;
     }
     nav{
         height: auto;
@@ -371,7 +377,7 @@ iframe{
   
   @media screen and (min-width:480px) and (max-width:767px) {
     .headerLogo{
-        left: 38%;
+       padding-left: 38%;
     }
     nav{
         flex-direction: row;
@@ -425,7 +431,7 @@ iframe{
   }
   @media screen and (min-width:768px) and (max-width:1023px) {
     .headerLogo{
-        left: 40%;
+       padding-left: 40%;
     }
     .introAmenities{
         height: auto;
