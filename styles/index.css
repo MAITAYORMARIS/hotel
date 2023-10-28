@@ -14,7 +14,9 @@ html {
     color: #3D3935;
 
 }
-
+button a{
+    color:#3D3935;
+}
 body {
     height: auto;
     width: 100vw;
@@ -221,6 +223,7 @@ footer{
     align-items: center;
     text-align: center;
     font-size: 16px;
+    color:#2f2d2b;
     
 }
 .zoom{

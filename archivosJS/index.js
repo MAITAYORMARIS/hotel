@@ -9,18 +9,18 @@ for (var i = 0; i < botonNav.length; i++) {
   })
 }
 // escuchar botones del home
-var botonIr=document.getElementsByClassName("botonHome")
+// var botonIr=document.getElementsByClassName("botonHome")
 
-for (var m = 0; m < botonIr.length; m++) {
-  const botonesSec = botonIr[m];
+// for (var m = 0; m < botonIr.length; m++) {
+//   const botonesSec = botonIr[m];
 
-  botonesSec.addEventListener("click", function (e) {
-    var destino = e.target.getAttribute("data-destino");
-  navegacionAlternativa(destino);
-    // var idClic=e.target.id.split("ir")
-    // navegacion(idClic[1])
-  })
-}
+//   botonesSec.addEventListener("click", function (e) {
+//     var destino = e.target.getAttribute("data-destino");
+//   navegacionAlternativa(destino);
+//     // var idClic=e.target.id.split("ir")
+//     // navegacion(idClic[1])
+//   })
+// }
 function navegacion(id) {
   switch (id) {
 
@@ -52,7 +52,7 @@ function toHome() {
 
 function navegacionAlternativa(id){
   var paginaanavegar=id
-  window.location.pathname = `/${paginaanavegar}.html`
+  window.location.pathname = `/hotel/${paginaanavegar}.html`
 }
 
 function reservar() {
