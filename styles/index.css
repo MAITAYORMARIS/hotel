@@ -332,6 +332,14 @@ iframe{
         column-gap:10%;
         row-gap: 2%;
     }
+    .call{
+        width: 40vw;
+        height: auto;
+       font-size:10px;
+    }
+    .callInfo{
+        font-size:10px;
+    }
     main{
         margin-top: 100px;
         margin-bottom: 50px;
@@ -385,6 +393,14 @@ iframe{
         column-gap:10%;
         row-gap: 2%;
     }
+    .call{
+        width: 40vw;
+        height: auto;
+       font-size:15px;
+    }
+    .callInfo{
+        font-size:12px;
+    }
     main{
         margin-top: 100px;
         margin-bottom: 50px;
@@ -432,6 +448,9 @@ iframe{
   @media screen and (min-width:768px) and (max-width:1023px) {
     .headerLogo{
        padding-left: 40%;
+    }
+    .call{
+        height: auto;
     }
     .introAmenities{
         height: auto;
